@@ -3,9 +3,9 @@ import random
 import asyncio
 from gtts import gTTS
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
+from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
-TOKEN = os.getenv("8759923548:AAH011SnYXIOf589on-mzJl4wW6IbMXC-ws")  # Must set in Railway Variables
+TOKEN = os.getenv("8759923548:AAH011SnYXIOf589on-mzJl4wW6IbMXC-ws")  # Railway Variables
 
 words = [
     ("Привет","privet","Hello"),
