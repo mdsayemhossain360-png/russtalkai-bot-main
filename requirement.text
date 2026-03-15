@@ -1,2 +1,2 @@
-git commit -m "Add gtts dependency"
-git push
+gtts
+python-telegram-bot
