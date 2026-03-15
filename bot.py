@@ -5,7 +5,7 @@ from gtts import gTTS
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
-TOKEN = os.getenv("8759923548:AAH011SnYXIOf589on-mzJl4wW6IbMXC-ws")  # Must set in Railway Variables
+TOKEN = os.getenv("TOKEN")  # Must set in Railway Variables
 
 words = [
     ("Привет","privet","Hello"),
@@ -55,7 +55,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     os.remove(filename)
 
 async def main():
-    app = Application.builder().token(8759923548:AAH011SnYXIOf589on-mzJl4wW6IbMXC-ws).build()
+    app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("word", word))
     app.add_handler(CallbackQueryHandler(button))
